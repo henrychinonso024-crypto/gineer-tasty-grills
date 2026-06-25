@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gineer Tasty Grills</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-utensils"></i>GTG
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="#categories">Menu</a></li>
+                <li><a href="#how-it-works">order Guide</a></li>
+
+                <li><a href="about.html">About us</a></li>
+                <li><a href="#catering-section">Catering service</a></li>
+                <li><a href="#promoo-banner">Promo</a></li>
+                <li><a href="#faq">FaQ</a></li>
+                <li><a href="fanclub.html">Fan-Club</a></li>
+                <li><a href="#videos">Video</a></li>
+
+                <li><a href="contact.html">Contact us</a></li>
+
+            </ul>
+
+            <div class="nav-actions">
+
+                <a href="cart.html" class="cart-btn">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span id="cart-count">
+                        0
+                    </span>
+
+                </a>
+
+                <div class="hamburger">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                <i class="fa-solid fa-truck"></i> Fast Delivery Available
+            </span>
+
+            <h1>
+
+                Delicious Food
+
+                <span>
+                    Delivered Fast
+                </span>
+
+            </h1>
+
+            <p>
+
+                Enjoy premium Shawarma, Pizza, Burgers and Drinks prepared fresh daily.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <!-- <a href="#categories" class="order-btn"> -->
+
+                <!-- <i class="fa-solid fa-burger burger rotate"></i> Order Now -->
+
+                <!-- </a> -->
+
+                <a href="#categories" class="menu-btn">
+
+                    <i class="fa-solid fa-burger burger bounce"></i> View Menu
+
+                </a>
+
+            </div>
+
+            <div class="hero-features">
+
+                <div>✔ Fresh Food</div>
+
+                <div><i class="fa-solid fa-truck"></i> Fast Delivery</div>
+
+                <div><i class="fa-solid fa-hand-holding-dollar"></i> Best Prices</div>
+
+            </div>
+
+
+            <!-- <div class="hero-stats"> -->
+
+            <!-- <div> -->
+
+            <!-- <h3>5K+</h3> -->
+
+            <!-- <span>Happy Customers</span> -->
+
+            <!-- </div> -->
+
+            <!-- <div> -->
+
+            <!-- <h3>12K+</h3> -->
+
+            <!-- <span>Orders Delivered</span> -->
+
+            <!-- </div> -->
+
+            <!-- <div> -->
+
+            <!-- <h3>4</h3> -->
+
+            <!-- <span>Branches</span> -->
+
+            <!-- </div> -->
+
+        </div>
+
+        </div>
+
+        <div class="hero-images">
+
+            <img src="images/pizza.webp" class="floating pizza">
+
+            <img src="images/shawarma.webp" class="floating shawarma">
+
+            <img src="images/burger.webp" class="floating burger">
+
+            <img src="images/drink.webp" class="floating drink">
+
+        </div>
+
+
+    </section>
+
+
+    <!-- featured================= -->
+
+    <section class="best-sellers">
+
+        <div class="section-titlle">
+
+            <span><i class="fa-solid fa-burger burger rotate"></i> Customer Favorites</span>
+
+            <h2>Best Sellers</h2>
+
+            <p>
+                Our most loved meals prepared fresh daily.
+            </p>
+
+        </div>
+
+        <div class="best-grid">
+
+            <div class="best-card">
+
+                <div class="badge">
+                    Best Seller
+                </div>
+
+                <img src="images/bestseller2.webp">
+
+                <div class="best-content">
+
+                    <h3>Beef Shawarma</h3>
+
+                    <p>
+                        Loaded with juicy beef and fresh vegetables.
+                    </p>
+
+                    <div class="price-row">
+
+                        <span>₦4,500</span>
+
+                        <button onclick="addToCart(2)">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="best-card">
+
+                <div class="badge">
+                    Popular
+                </div>
+
+                <img src="images/bestseller1_900x750.webp">
+
+                <div class="best-content">
+
+                    <h3>Chicken Pizza</h3>
+
+                    <p>
+                        12 iches Chicken pizza.
+                    </p>
+
+                    <div class="price-row">
+
+                        <span>₦14,000</span>
+
+                        <button onclick="addToCart(5)">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="best-card">
+
+                <div class="badge">
+                    Hot 🔥
+                </div>
+
+                <img src="images/buger.webp">
+
+                <div class="best-content">
+
+                    <h3>Chicken Burger</h3>
+
+                    <p>
+                        Soft bun with juicy grilled Chicken.
+                    </p>
+
+                    <div class="price-row">
+
+                        <span>₦6,000</span>
+
+                        <button onclick="addToCart(9)">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="hero-buttons">
+
+                <!-- <a href="#categories" class="order-btn"> -->
+
+                <!-- <i class="fa-solid fa-burger burger rotate"></i> Order Now -->
+
+                <!-- </a> -->
+
+                <a href="#categories" class="menu-btn">
+
+                    <i class="fa-solid fa-burger burger bounce"></i> View Menu
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <!-- promotion-barnner========= -->
+
+    <section class="promoo-banner" id="promoo-banner">
+
+        <div class="promoo-content">
+
+            <span class="promoo-tag">
+
+                🔥 Limited Time Offer
+
+            </span>
+
+            <h2>
+
+                Buy 6 Shawarmas
+
+                <span>Get 1 Fruit Parfait Free</span>
+
+            </h2>
+
+            <p>
+
+                Freshly prepared and delivered fast to your location.
+
+            </p>
+
+            <a href="https://wa.me/2349033035249?text=Hello%20Gineer%20Tasty%20Grills,%20I%20am%20interested%20in%20the%20current%20promo%20offer.%20Please%20provide%20more%20details."
+                target="_blank" class="promoo-btn">
+
+                Claim Promo 🎉
+
+            </a>
+
+        </div>
+
+        <div class="promoo-image">
+
+            <img src="images/shawarma.webp" alt="Special Offer">
+
+        </div>
+
+    </section>
+
+    <!-- ====category============ -->
+
+    <!-- CATEGORIES -->
+    <section class="search-section">
+
+        <div class="search-box">
+
+
+            <input type="text" id="search-input" placeholder="🔍Search for shawarma, pizza, burger...">
+
+
+        </div>
+
+    </section>
+
+
+    <section class="categories" id="categories">
+
+        <h2>🍕 Find Your Craving</h2>
+        <p>
+            Choose from our delicious selection of Shawarma,
+            Pizza, Burgers, Drinks and more.
+        </p>
+
+        <div class="category-container">
+
+            <button class="category-btn active" data-category="all">
+
+                All
+
+            </button>
+
+            <button class="category-btn" data-category="shawarma">
+
+                <i class="fa-solid fa-wheat-awn"></i> Shawarma
+
+            </button>
+
+            <button class="category-btn" data-category="pizza">
+
+                <i class="fa-solid fa-utensils"></i> Pizza
+
+            </button>
+
+            <button class="category-btn" data-category="burger">
+
+                Burgers
+
+            </button>
+
+            <button class="category-btn" data-category="drinks">
+
+                <i class="fa-solid fa-glass-water drink-icon"></i>Drinks
+
+            </button>
+            <button class="category-btn" data-category="parfait">
+
+                <i class="fa-solid fa-mug-hot"></i> Parfait
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- MENU -->
+
+    <section class="menu">
+
+        <h2>Gineer's Treats</h2>
+
+        <div class="food-grid" id="food-grid">
+
+        </div>
+
+    </section>
+
+
+
+    <section class="how-it-works" id="how-it-works">
+
+        <div class="section-title">
+
+            <h2>How To Order</h2>
+
+            <p>
+                Ordering your favorite meals is quick and easy.
+            </p>
+
+        </div>
+
+        <div class="steps-container">
+
+            <div class="step-card">
+
+                <div class="step-number">01</div>
+
+                <div class="step-icon"><i class="fa-solid fa-utensils"></i>🍔</div>
+
+                <h3>Choose Your Food</h3>
+
+                <p>
+                    Browse our delicious shawarma, pizzas, burgers and drinks.
+                </p>
+
+            </div>
+
+            <div class="step-card">
+
+                <div class="step-number">02</div>
+
+                <div class="step-icon">🛒</div>
+
+                <h3>Add To Cart</h3>
+
+                <p>
+                    Add your favorite meals and review your order.
+                </p>
+
+            </div>
+
+            <div class="step-card">
+
+                <div class="step-number">03</div>
+
+                <div class="step-icon"><i class="fa-solid fa-location-dot bounce-icon"></i></div>
+
+                <h3>Select Delivery</h3>
+
+                <p>
+                    Choose pickup or delivery and select your branch.
+                </p>
+
+            </div>
+
+            <div class="step-card">
+
+                <div class="step-number">04</div>
+
+                <div class="step-icon"><i class="fa-solid fa-basket-shopping"></i></div>
+
+                <h3>Receive Your Order</h3>
+
+                <p>
+                    We prepare your food fresh and deliver it fast.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================video section====================== -->
+
+    <section class="video-section" id="videos">
+
+        <div class="section-titlle">
+
+            <span><i class="fa-solid fa-circle-play"></i> Watch Us In Action</span>
+
+            <h2>Fresh Food, Real Moments</h2>
+
+            <p>See how we prepare our delicious meals.</p>
+
+        </div>
+        <div class="social-links">
+
+
+            <a href="https://www.facebook.com/share/1EKonWVpvU/" target="_blank">
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+            </a>
+
+            <a href="https://www.instagram.com/gineertasty" target="_blank">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+            <a href="https://tiktok.com/@YOUR_PAGE" target="_blank">
+
+                <i class="fa-brands fa-tiktok"></i>
+
+            </a>
+
+            <a href="https://wa.me/2349033035249" target="_blank">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="video-tabs">
+
+            <button class="video-tab active" onclick="changeVideo(1,event)">
+
+                <i class="fa-solid fa-circle-play"></i> Video 1
+
+            </button>
+
+            <button class="video-tab" onclick="changeVideo(2,event)">
+
+                <i class="fa-solid fa-circle-play"></i> Video 2
+
+            </button>
+
+            <button class="video-tab" onclick="changeVideo(3,event)">
+
+                <i class="fa-solid fa-circle-play"></i>Video 3
+
+            </button>
+
+        </div>
+
+        <div class="video-frame">
+
+            <iframe id="mainVideo"
+                src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fweb.facebook.com%2Freel%2F997215209458774%2F&show_text=false&width=267&t=0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            </iframe>
+
+        </div>
+
+        <a href="https://wa.me/2349033035249?text=Hello%20I%20want%20to%20place%20an%20order" class="video-order-btn"
+            target="_blank">
+
+            Order Now
+
+        </a>
+
+    </section>
+
+    <!-- testimonial============ -->
+
+    <section class="testimonials">
+
+        <div class="section-title">
+
+            <h2>Our Customers Reviews</h2>
+
+            <p>
+                Thousands of satisfied customers love our meals.
+            </p>
+
+        </div>
+
+        <div class="testimonial-container">
+
+            <div class="testimonial-card">
+
+                <div class="stars-3d">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <p>
+                    The best shawarma I've tasted in a long time. Fresh, delicious and delivered fast.
+                </p>
+
+                <div class="customer">
+
+                    <div class="avatar">
+                        👨
+                    </div>
+
+                    <div>
+
+                        <h4>Michael A.</h4>
+
+                        <span>Nsukka</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars-3d">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <p>
+                    Their pizza is amazing. The crust was perfect and the toppings were generous.
+                </p>
+
+                <div class="customer">
+
+                    <div class="avatar">
+                        👩
+                    </div>
+
+                    <div>
+
+                        <h4>Chiamaka O.</h4>
+
+                        <span>Enugu</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars-3d">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+
+                <p>
+                    Fast delivery and excellent customer service. Highly recommended.
+                </p>
+
+                <div class="customer">
+
+                    <div class="avatar">
+                        👨
+                    </div>
+
+                    <div>
+
+                        <h4>David K.</h4>
+
+                        <span>Abuja</span>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="review-btn-container">
+
+            <a href="https://www.facebook.com/share/1EKonWVpvU/" target="_blank" class="review-btn" class="review-btn">
+
+                View More Reviews
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- catering=============================== -->
+
+
+    <section class="catering-section" id="catering-section">
+
+        <div class="catering-content">
+
+            <span class="catering-tag"><i class="fa-solid fa-kitchen-set"></i> Catering & Events</span>
+
+            <h2>Bring Gineer Tasty Grills to your event.</h2>
+
+            <p>
+
+                From office lunches and birthdays to weddings, school events, church programmes and corporate
+                gatherings, we provide shawarma, burgers, pizza, drinks,smallchops and event platters that people
+                remember.
+
+            </p>
+
+            <a href="https://wa.me/2349033035249?text=Hello%20Gineer%20Tasty%20Grills,%20I%20want%20a%20quote%20for%20catering%20and%20events."
+                target="_blank" class="quote-btn">
+
+                Get Quote
+
+            </a>
+
+            <p class="small-note">
+
+                ✔ Weddings • Birthdays • Corporate Events • School Events
+
+            </p>
+
+        </div>
+
+        <div class="catering-image">
+
+            <img src="images/catering.webp" alt="Gineer Tasty Grills Catering">
+
+        </div>
+
+    </section>
+
+
+    <!-- braches================================ -->
+    <section class="branches">
+
+        <div class="section-titlle">
+
+            <h2>Our Branches</h2>
+
+            <p>
+                Visit any of our locations or order online.
+            </p>
+
+        </div>
+
+        <div class="branches-grid">
+
+            <div class="branch-box">
+
+                <div class="branch-icon"><i class="fa-solid fa-location-dot bounce-icon"></i></div>
+
+                <h3>Nsukka Branch</h3>
+
+                <p>University Road, Nsukka</p>
+
+                <a href="tel:09033035249">
+                    <i class="fa-solid fa-phone-volume"></i> Call Branch
+                </a>
+
+            </div>
+
+            <div class="branch-box">
+
+                <div class="branch-icon"><i class="fa-solid fa-location-dot bounce-icon"></i></div>
+
+                <h3>Enugu Branch</h3>
+
+                <p>Independence Layout, Enugu</p>
+
+                <a href="tel:09033035249">
+                    <i class="fa-solid fa-phone-volume"></i> Call Branch
+                </a>
+
+            </div>
+
+            <div class="branch-box">
+
+                <div class="branch-icon"><i class="fa-solid fa-location-dot bounce-icon"></i></div>
+
+                <h3>Abuja Branch</h3>
+
+                <p>Wuse Zone 4, Abuja</p>
+
+                <a href="tel:09033035249">
+                    <i class="fa-solid fa-phone-volume"></i> Call Branch
+                </a>
+
+            </div>
+
+            <div class="branch-box">
+
+                <div class="branch-icon"><i class="fa-solid fa-location-dot bounce-icon"></i></div>
+
+                <h3>Lagos Branch</h3>
+
+                <p>Ikeja, Lagos</p>
+
+                <a href="tel:09033035249">
+                    <i class="fa-solid fa-phone-volume"></i> Call Branch
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact-strip">
+
+        <h2>
+            Ready To Order?
+        </h2>
+        <p>We are here to serve you.</p>
+
+        <p>
+            Fresh Shawarma, Pizza, Burgers & Drinks Delivered Fast
+        </p>
+
+        <a href="#categories">
+
+            <i class="fa-solid fa-burger burger rotate"></i> Order Now
+
+        </a>
+
+    </section>
+
+    <!-- why======================== -->
+
+    <section class="why-us">
+
+        <div class="section-title">
+
+            <span> <i class="fa-solid fa-star"></i>
+                Why Choose Us</span>
+
+            <h2>Fresh Food, Fast Delivery</h2>
+
+            <p>
+                We are committed to providing delicious meals and excellent customer service.
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <div class="why-icon">🍔</div>
+
+                <h3>Fresh Ingredients</h3>
+
+                <p>
+                    Every meal is prepared using carefully selected fresh ingredients.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-icon">🚚</div>
+
+                <h3>Fast Delivery</h3>
+
+                <p>
+                    Get your meals delivered quickly and safely to your location.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-icon">⭐</div>
+
+                <h3>Top Quality</h3>
+
+                <p>
+                    Consistent quality that keeps customers coming back.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-icon"><i class="fa-solid fa-money-bill"></i></div>
+
+                <h3>Customer Support</h3>
+
+                <p>
+                    Friendly support ready to assist with your orders.
+                </p>
+
+            </div>
+
+            <div class="stats-section">
+
+                <div class="stat-box">
+
+                    <h2 class="counter" data-target="5000">
+
+                        0
+
+                    </h2>
+
+                    <p>Happy Customers</p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h2 class="counter" data-target="12000">
+
+                        0
+
+                    </h2>
+
+                    <p>Orders Delivered</p>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <h2 class="counter" data-target="4">
+
+                        0
+
+                    </h2>
+
+                    <p>Branches</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- faq=================== -->
+
+    <section class="faq" id="faq">
+
+        <div class="section-title">
+
+            <span>❓ Need Help?</span>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <p>
+                Everything you need to know before placing an order.
+            </p>
+
+        </div>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    How do I place an order?
+
+                    <span>+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Browse our menu, add items to cart, choose pickup or delivery, then complete your order via
+                        WhatsApp.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    What is the delivery fee?
+
+                    <span>+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Delivery costs ₦1,500 and is automatically added during checkout when delivery is selected.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    How long does delivery take?
+
+                    <span>+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Most deliveries arrive within 30–60 minutes depending on your location.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Can I pick up my order?
+
+                    <span>+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. Simply select Pickup during checkout and choose your preferred branch.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    What payment methods do you accept?
+
+                    <span>+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        We accept bank transfer, cash on pickup, and other payment methods approved by our branches.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- BRAND -->
+
+            <div class="footer-col">
+
+                <h2 class="footer-logo">
+
+                    <i class="fa-solid fa-utensils"></i> Gineer Tasty Grills
+
+                </h2>
+
+                <p>
+
+                    Serving delicious Shawarma, Pizza, Burgers and Drinks with fast delivery and premium customer
+                    service.
+
+                </p>
+
+                <h1>Find us here⏬</h1>
+
+                <div class="social-links">
+
+
+                    <a href="https://www.facebook.com/share/1EKonWVpvU/" target="_blank">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="https://www.instagram.com/gineertasty" target="_blank">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="https://tiktok.com/@YOUR_PAGE" target="_blank">
+
+                        <i class="fa-brands fa-tiktok"></i>
+
+                    </a>
+
+                    <a href="https://wa.me/2349033035249" target="_blank">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- LINKS -->
+
+            <div class="footer-col">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#menu">Menu</a>
+                    </li>
+
+                    <li>
+                        <a href="cart.html">Cart</a>
+                    </li>
+
+                    <li>
+                        <a href="#branches">Branches</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- BRANCHES -->
+
+            <div class="footer-col">
+
+                <h3>Our Branches</h3>
+
+                <ul>
+
+                    <li> Nsukka Branch</li>
+
+                    <li> Enugu Branch</li>
+
+                    <li> Abuja Branch</li>
+
+                    <li> Lagos Branch</li>
+
+                </ul>
+
+            </div>
+
+            <!-- CONTACT -->
+
+            <div class="footer-col">
+
+                <h3>Contact Us</h3>
+
+                <ul>
+
+                    <li><i class="fa-solid fa-phone-volume"></i> 09033035249</li>
+
+                    <li>✉ info@gineertastygrills.com</li>
+
+                    <li>🕒 Mon - Sun</li>
+
+                    <li>10:00 AM - 10:00 PM</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>website developed by nojec<br> 09033035249</p>
+
+            <p>
+
+                © 2026 Gineer Tasty Grills.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+    <a href="cart.html" class="floating-cart-btn">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span>Cart</span>
+
+        <span id="floating-cart-count">0</span>
+
+    </a>
+
+    <!-- <a href="https://wa.me/234XXXXXXXXXX" class="whatsapp-float" target="_blank"> -->
+    <!-- <i class="fa-brands fa-whatsapp"></i> -->
+    <!-- </a> -->
+
+    <div class="whatsapp-popup" id="whatsappPopup">
+
+        <button class="close-popup" id="closePopup">
+            ✕
+        </button>
+
+        <div class="popup-header">
+
+            <i class="fa-solid fa-mug-hot"></i>
+
+            <div>
+
+                <h4>Need Help?</h4>
+
+                <p>We usually reply in a few seconds.</p>
+
+            </div>
+
+        </div>
+
+        <a href="https://wa.me/2349033035249?text=Hello%20Gineer%20Tasty%20Grills" target="_blank" class="popup-btn">
+
+            Chat Now
+
+        </a>
+
+    </div>
+
+
+    <div class="order-popup" id="orderPopup">
+
+        <div class="popup-food">
+            <i class="fa-solid fa-burger burger rotate"></i>
+
+        </div>
+
+        <div>
+
+            <h4 id="popupName">
+
+                Chinedu from Nsukka
+
+            </h4>
+
+            <p id="popupOrder">
+
+                ordered Chicken Shawarma
+
+            </p>
+
+            <span>
+
+                Just now
+
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <button id="scrollTopBtn" class="scroll-top-btn">
+
+        ⬆🍕
+
+    </button>
+
+
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
