@@ -215,7 +215,7 @@ function displayProducts(items) {
 
 <p class="food-desc">
 
-Freshly prepared and served hot.
+Freshly prepared and served quick.
 
 </p>
 
@@ -278,56 +278,45 @@ function addToCart(id) {
 
 // ================= UPDATE CART BADGE =================
 
+// ================= UPDATE CART BADGE =================
+
 function updateCartCount() {
 
-  const cartCount =
-    document.getElementById("cart-count");
+  // Always get the latest cart from localStorage
+  cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  const floatingCount =
-    document.getElementById(
-      "floating-cart-count"
-    );
+  const cartCount = document.getElementById("cart-count");
+  const floatingCount = document.getElementById("floating-cart-count");
+  const floatingBtn = document.querySelector(".floating-cart-btn");
 
-  const totalItems =
-    cart.reduce(
-      (sum, item) =>
-        sum + item.quantity,
-      0
-    );
+  // Calculate total quantity of all items
+  const totalItems = cart.reduce((sum, item) => {
+    return sum + item.quantity;
+  }, 0);
 
+  // Update navbar cart badge
   if (cartCount) {
+    cartCount.textContent = totalItems;
 
-    cartCount.textContent =
-      totalItems;
-
+    if (totalItems > 0) {
+      cartCount.style.display = "flex";
+    } else {
+      cartCount.style.display = "none";
+    }
   }
 
+  // Update floating cart badge
   if (floatingCount) {
+    floatingCount.textContent = totalItems;
+  }
 
-    floatingCount.textContent =
-      totalItems;
-
-    const floatingBtn =
-      document.querySelector(
-        ".floating-cart-btn"
-      );
-
-    if (totalItems === 0) {
-
-      floatingBtn.style.display =
-        "none";
-
-    } else {
-
-      floatingBtn.style.display =
-        "flex";
-
-    }
-
+  // Show or hide floating cart button
+  if (floatingBtn) {
+    floatingBtn.style.display =
+      totalItems > 0 ? "flex" : "none";
   }
 
 }
-
 // ================= SAVE CART =================
 
 function saveCart() {
@@ -406,7 +395,7 @@ Start adding delicious meals
 <a href="index.html#categories"
 class="browse-btn">
 
-Browse Menu
+View Menu
 
 </a>
 
@@ -863,7 +852,7 @@ Total:
     window.location.href =
       "thankyou.html";
 
-  }, 5000);
+  }, 7000);
 
 }
 
@@ -1125,7 +1114,7 @@ const recentOrders = [
 {
 name:"Chinedu",
 location:"Nsukka",
-food:" Chicken Shawarma"
+food:" 🍕Chicken Shawarma"
 },
 
 {
@@ -1143,13 +1132,13 @@ food:"🍔 double Burger"
 {
 name:"Favour",
 location:"obollo",
-food:" Coke Combo"
+food:" 🍕Coke Combo"
 },
 
 {
 name:"Michael",
 location:"Nsukka",
-food:" beef Shawarma"
+food:" 🍕beef Shawarma"
 },
 
 {
@@ -1311,3 +1300,12 @@ scrollTopBtn.addEventListener(
 
 
 
+// Update cart count when page loads
+document.addEventListener("DOMContentLoaded", () => {
+  updateCartCount();
+});
+
+// Update cart count when returning to the page
+window.addEventListener("pageshow", () => {
+  updateCartCount();
+});
