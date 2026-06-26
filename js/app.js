@@ -950,37 +950,25 @@ el.classList.add("show");
 });
 
 
-window.addEventListener(
-"load",
-()=>{
+window.addEventListener("load", () => {
 
-setTimeout(()=>{
+    const loader = document.getElementById("loader");
 
-const loader =
-document.getElementById(
-"loader"
-);
+    setTimeout(() => {
 
-if(loader){
+        loader.style.transform = "translateY(-100%)";
 
-loader.style.opacity="0";
+        loader.style.opacity = "0";
 
-loader.style.transition=
-".5s";
+        setTimeout(() => {
 
-setTimeout(()=>{
+            loader.style.display = "none";
 
-loader.style.display=
-"none";
+        },800);
 
-},500);
-
-}
-
-},2000);
+    },3500);
 
 });
-
 
 // notification pup op==============
 const whatsappPopup =
