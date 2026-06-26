@@ -185,18 +185,15 @@ transition:.4s;
 
     overflow:hidden;
 
-    background:
-
-    linear-gradient(
-
+    background: linear-gradient(
     135deg,
+    #0F172A,
+    #1E293B,
+    #111827
+);
 
-    #fff5f5,
-
-    #ffffff
-
-    );
     margin-bottom: 0%;
+    border-radius: 50px;
 
 }
 
@@ -233,6 +230,7 @@ transition:.4s;
     line-height:1.1;
 
     margin-bottom:20px;
+    color: white;
 
 }
 
@@ -244,7 +242,7 @@ transition:.4s;
 
 .hero p{
 
-    color:#666;
+    color:#fff;
 
     line-height:1.8;
 
@@ -255,22 +253,12 @@ transition:.4s;
 
 .hero-buttons{
 
-    display:flex;
+    display:block;
 
     gap:15px;
 
     margin-bottom:30px;
-    background:
-
-    linear-gradient(
-
-    135deg,
-
-    #fff5f5,
-
-    #ffffff
-
-    );
+    
 
 
 }
@@ -304,6 +292,7 @@ transition:.4s;
     text-decoration:none;
 
     font-weight:600;
+    /* background-color: #b10010; */
 
 
 }
@@ -317,6 +306,7 @@ transition:.4s;
     flex-wrap:wrap;
 
     font-weight:600;
+    color: #f2f2f2;
 
 }
 
