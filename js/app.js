@@ -446,13 +446,7 @@ return;
           <p>
             ₦${item.price.toLocaleString()}
           </p>
-          <button
-class="remove-btn"
-onclick="removeItem(${item.id})">
-
-🗑
-
-</button>
+        
 
         </div>
 
@@ -852,7 +846,7 @@ Total:
     window.location.href =
       "thankyou.html";
 
-  }, 7000);
+  }, 8000);
 
 }
 
